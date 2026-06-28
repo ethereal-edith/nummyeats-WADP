@@ -38,4 +38,16 @@ if (reservationForm){ //prevents errors
     });
 }
 // reviews storage
+
 // menu search
+const menuSearch = document.getElementById('menuSearch');
+if(menuSearch){//prevents error
+    menuSearch.addEventListener('input', function(){
+        const term = menuSearch.value.toLowerCase().trim();
+        const rows = document.querySelectorAll('.menu-table tr');
+        rows.forEach(function(row){
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(term) ? '' : 'none';
+        });
+    });
+}
