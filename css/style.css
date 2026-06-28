@@ -520,7 +520,6 @@ footer {
     border-bottom: 2px solid rgba(210, 144, 70, 0.35);
     padding-bottom: 8px;
 }
-/* accordion overrides to match brand */
 .accordion-item {
     border: 1px solid rgba(64, 34, 24, 0.1);
     border-radius: 10px !important;
@@ -558,4 +557,55 @@ footer {
 }
 .accordion-body strong {
     color: #3D6334;
+}
+/* contact page */
+.contact-hero {
+    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04));
+    border-radius: 0 0 20px 20px;
+}
+.contact-hero h1 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 3rem;
+}
+.contact-hero p {
+    font-family: Georgia, serif;
+    color: #D29046;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.contact-section-title {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.35);
+    padding-bottom: 8px;
+}
+.contact-hero ~ div .form-label {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-weight: 600;
+}
+.form-control {
+    font-family: Georgia, serif;
+    border: 1px solid rgba(64, 34, 24, 0.18);
+    border-radius: 8px;
+}
+.form-control:focus {
+    border-color: #3D6334;
+    box-shadow: 0 0 0 0.2rem rgba(61, 99, 52, 0.15);
+}
+.btn-contact {
+    background-color: #3D6334;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    transition: background-color 0.2s ease;
+}
+.btn-contact:hover {
+    background-color: #2e4c27;
+    color: #ffffff;
 }
