@@ -3,17 +3,13 @@
 #D29046
 #3D6334
 */
+/*all pages*/
 html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
     padding:0;
-}
-.content-wrapper {
-    flex: 1;
-    padding-top: 70px; 
-    text-align: center;
 }
 nav.navbar {
     background: linear-gradient(90deg, #402218 0%, #D29046 55%, #3D6334 100%);
@@ -38,6 +34,11 @@ nav.navbar .navbar-brand{
 .offcanvas .nav-link:hover {
     color: #3D6334 !important; 
 }
+.offcanvas .btn-close {
+    filter: invert(1) grayscale(1) brightness(2);
+    opacity: 0.8;
+
+}
 .content-wrapper {
     flex: 1 0 auto;
     padding-top: 60px; 
@@ -51,4 +52,171 @@ footer {
     font-family: Georgia, serif;
     width: 100%;
     margin: 0;
+}
+/*index.html*/
+.hero-section {
+    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04)); 
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px; 
+}
+.hero-section h1 {
+    font-family: Georgia, serif;
+    color: #402218; 
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+.hero-section h2 {
+    font-family: Georgia, serif;
+    color: #3D6334; 
+    font-size: 2.0rem;
+    font-style: italic;
+    text-transform: capitalize; 
+    margin-bottom: 8px;
+}
+.hero-section p {
+    font-family: Georgia, serif;
+    color: #D29046; 
+    font-size: 1.4rem;
+    font-style: italic;
+    text-transform: capitalize; 
+    margin-bottom: 8px;
+}
+.intro {
+    max-width: 750px; 
+    margin: 40px auto; 
+    padding: 0 25px;
+    position: relative;
+}
+
+.intro p {
+    font-family: Georgia, serif;
+    color: #402218; 
+    font-size: 1.25rem;
+    line-height: 1.8; 
+    text-align: center;
+    font-style: italic;
+}
+.intro::before {
+    content: "“";
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    color: rgba(210, 144, 70, 0.2); 
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.intro::after {
+    content: "”"; 
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    color: rgba(210, 144, 70, 0.2); 
+    position: absolute;
+    bottom: -30px; 
+    right: 10px;   
+}
+.choose-us {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(64, 34, 24, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.choose-us h2 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.choose-us ul {
+    list-style: none; /* Removes the default browser bullet points */
+    padding-left: 0;
+}
+.choose-us li::before {
+    content: "❥";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #3D6334; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.choose-us li {
+    font-family: 'Times New Roman', Times, serif;
+    color: #402218;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    position: relative;
+    text-align: left;
+}
+.brand-link {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #402218; 
+    color: #D29046;            
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-decoration: none;     
+    border-radius: 5px;        
+    transition: all 0.3s ease; /* Makes the hover transition smooth */
+}
+.brand-link:hover {
+    background-color: #3D6334; 
+    color: #FFFFFF;           
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+}
+.best-sellers {
+    padding: 40px 20px;
+    background-color: #fcf9f5;
+    text-align: center;
+}
+.best-sellers h2 {
+    color: #402218; 
+    font-family: Georgia, serif;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row; /* Aligns image and text side-by-side */
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto; 
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.08); 
+    overflow: hidden; 
+    text-align: left; /* Aligns description text cleanly */
+    border-left: 5px solid #3D6334; 
+}
+.menu-items img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover; /* Prevents the food pictures from stretching out of shape */
+}
+.menu-items p {
+    padding: 20px 25px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #402218; /* Chocolate text */
+}
+
+.menu-items p strong {
+    color: #D29046; /* Caramel color for food names */
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 8px;
 }
