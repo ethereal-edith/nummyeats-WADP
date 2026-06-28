@@ -5,7 +5,6 @@
 */
 
 /* all pages*/
-
 nav.navbar {
     background: linear-gradient(90deg, #402218 0%, #D29046 55%, #3D6334 100%);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -42,8 +41,7 @@ footer {
     font-family: Georgia, serif;
 }
 
-/* index.html */
-
+/* index page */
 .hero-section {
     background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04));
     border-radius: 0 0 20px 20px;
@@ -138,8 +136,7 @@ footer {
     font-family: Georgia, serif;
 }
 
-/* menu.html */
-
+/* menu page*/
 .menu-items {
     box-shadow: 0 4px 15px rgba(64, 34, 24, 0.08);
     border-left: 5px solid #3D6334;
@@ -206,7 +203,8 @@ footer {
     font-size: 1.1rem;
     font-weight: 500;
 }
-/* gallery.html*/
+
+/* gallery page*/
 .gallery-header h1 {
     font-family: Georgia, serif;
     color: #402218;
@@ -252,4 +250,120 @@ footer {
     color: #D29046;
     font-family: Georgia, serif;
     font-size: 1.15rem;
+}
+
+/*about us page*/
+.about-hero {
+    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04));
+    border-radius: 0 0 20px 20px;
+}
+.about-hero h1 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 3rem;
+    letter-spacing: -0.5px;
+}
+.about-hero p {
+    font-family: Georgia, serif;
+    color: #3D6334;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.about-section-title {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.35);
+    padding-bottom: 8px;
+}
+.story-text {
+    font-family: 'Times New Roman', Times, serif;
+    color: #402218;
+    font-size: 1.1rem;
+    line-height: 1.85;
+}
+.value-card {
+    background-color: #ffffff;
+    border-top: 4px solid #3D6334;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
+}
+.value-card h5 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.value-card p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #70605c;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+.mission-banner {
+    background-color: #402218;
+    border-radius: 12px;
+}
+.mission-banner p {
+    font-family: Georgia, serif;
+    color: #D29046;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.7;
+}
+.team-card {
+    background-color: #ffffff;
+    border-left: 5px solid #3D6334;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card h5 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.team-card .team-role {
+    font-family: Georgia, serif;
+    color: #D29046;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.team-card p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #70605c;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+.milestone-item {
+    border-left: 3px solid #D29046;
+    padding-left: 20px;
+    position: relative;
+}
+.milestone-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #D29046;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 4px;
+}
+.milestone-item .milestone-year {
+    font-family: Georgia, serif;
+    color: #D29046;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.milestone-item p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #402218;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
 }
