@@ -7,18 +7,18 @@
         <link rel="icon" type="image/png" href="./assets/nummy eats logo.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        
     </head>
-    <body>
-        <!--navigation bar-->
-         <nav class="navbar fixed-top">
+    <body class="d-flex flex-column min-vh-100 m-0 p-0">
+
+        <!-- navigation bar -->
+        <nav class="navbar fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand d-inline-flex align-items-center gap-2" href="./index.html">
                     <img src="./assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
                     Nummy eats
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -27,90 +27,87 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/branches.html">Branches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/careers.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/reservations.html">Reservations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="html/reviews.html">Reviews</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/branches.html">Branches</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/careers.html">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/reservations.html">Reservations</a></li>
+                            <li class="nav-item"><a class="nav-link" href="html/reviews.html">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-               <!--hero section-->
 
-        <main class="content-wrapper">
-            <section class="hero-section">
-                <h1>Karibu Nummy eats</h1>
-                <h2> bold, authentic kenyan flavours </h2>
-                <p><i>"From our hearts to your plates"</i></p>
+        <!-- main content -->
+        <main class="flex-grow-1 pt-5 text-center content-wrapper">
+
+            <!-- hero section -->
+            <section class="hero-section py-5 px-3 mb-4">
+                <h1 class="fw-bold mb-3">Karibu Nummy eats</h1>
+                <h2 class="fst-italic text-capitalize mb-2">bold, authentic kenyan flavours</h2>
+                <p class="fst-italic text-capitalize mb-2"><i>"From our hearts to your plates"</i></p>
             </section>
-            <section class="intro">
-                <p>
+
+            <!-- intro section -->
+            <section class="intro mx-auto my-5 px-4 position-relative" style="max-width: 750px;">
+                <p class="fst-italic text-center">
                     Nummy Eats started with one simple idea: Kenyan food deserves a seat at the table, served the way our grandmothers made it but in a space built for today.
                     From sizzling nyama choma to a perfectly spiced pilau, every dish on our menu tells a story rooted in home.
                     All from our easily accesible branches country wide.
-                </p>   
+                </p>
             </section>
-            <section class="choose-us">
-                <h2>Why choose us?</h2>
-                <ul>
-                    <li>We always serve fresh food cooked on the same day. Nothing sits in the freezer waiting for an order</li>
-                    <li>Our recipies are handcrafted and taste like home. Family recipies recognised by every kenyan</li>
-                    <li>The same expereince at every branch, so you will always feel at home</li>
+
+            <!-- choose us section -->
+            <section class="choose-us mx-auto my-5 p-4 bg-white rounded-3 text-center" style="max-width: 800px;">
+                <h2 class="fw-bold mb-4 text-center">Why choose us?</h2>
+                <ul class="mb-0">
+                    <li class="mb-3 text-start">We always serve fresh food cooked on the same day. Nothing sits in the freezer waiting for an order</li>
+                    <li class="mb-3 text-start">Our recipies are handcrafted and taste like home. Family recipies recognised by every kenyan</li>
+                    <li class="mb-3 text-start">The same expereince at every branch, so you will always feel at home</li>
                 </ul>
             </section>
-            <section class="best-sellers">
-                <h2> Here is a sneak peak of our best selling meals</h2>
-                    <section class="menu-items">
-                        <img src="./assets/beefpilau.jpg" alt="beef pilau">
-                        <p><strong>Beef Pilau :</strong> Pilau is a rich, fragrant rice dish that is heavily influenced by coastal Swahili culture. 
-                            It is a staple at Kenyan celebrations (weddings, holidays, and Sunday gatherings), loved for its deep brown color and intense spice profile. 
-                        </p>
-                    </section>
-                    <section class="menu-items">
-                        <img src="./assets/ugaliandnyamachoma.jpg" alt="beef pilau">
-                        <p> <strong>Ugali and Nyama choma :</strong> Ugali Nyama Choma is the undisputed king of Kenyan social life. 
-                            Nyama Choma literally translates to "burned meat" or "roasted meat" in Swahili, and it is traditionally enjoyed at local joints alongside friends and family.</p>
-                    </section>
-                <a href="html/menu.html" class="brand-link">Want to see more? Explore Our Menu</a><br>
-                <a href="html/reservations.html" class="brand-link">Want to reserve a table? </a><br>
-                <a href="html/reviews.html" class="brand-link">Not sold? Check out our Reviews</a><br>
+
+            <!-- best sellers section -->
+            <section class="best-sellers py-5 px-3 text-center">
+                <h2 class="fw-bold mb-4">Here is a sneak peak of our best selling meals</h2>
+
+                <div class="menu-items d-flex flex-row align-items-center mx-auto mb-4 rounded-3 overflow-hidden text-start" style="max-width: 800px;">
+                    <img src="./assets/beefpilau.jpg" alt="beef pilau">
+                    <p class="p-4 m-0">
+                        <strong class="d-block mb-2">Beef Pilau :</strong>
+                        Pilau is a rich, fragrant rice dish that is heavily influenced by coastal Swahili culture.
+                        It is a staple at Kenyan celebrations (weddings, holidays, and Sunday gatherings), loved for its deep brown color and intense spice profile.
+                    </p>
+                </div>
+
+                <div class="menu-items d-flex flex-row align-items-center mx-auto mb-4 rounded-3 overflow-hidden text-start" style="max-width: 800px;">
+                    <img src="./assets/ugaliandnyamachoma.jpg" alt="ugali and nyama choma">
+                    <p class="p-4 m-0">
+                        <strong class="d-block mb-2">Ugali and Nyama choma :</strong>
+                        Ugali Nyama Choma is the undisputed king of Kenyan social life.
+                        Nyama Choma literally translates to "burned meat" or "roasted meat" in Swahili, and it is traditionally enjoyed at local joints alongside friends and family.
+                    </p>
+                </div>
+
+                <a href="html/menu.html" class="brand-link d-inline-block fw-bold rounded-2 m-2 px-4 py-3">Want to see more? Explore Our Menu</a><br>
+                <a href="html/reservations.html" class="brand-link d-inline-block fw-bold rounded-2 m-2 px-4 py-3">Want to reserve a table?</a><br>
+                <a href="html/reviews.html" class="brand-link d-inline-block fw-bold rounded-2 m-2 px-4 py-3">Not sold? Check out our Reviews</a><br>
             </section>
+
         </main>
-        
-        <!--footer-->
-         <footer>
-            <p>@nummyeats2026 from our hearts to your plates. </p>
+
+        <!-- footer -->
+        <footer class="text-center py-2 w-100 m-0">
+            <p class="mb-0">@nummyeats2026 from our hearts to your plates.</p>
         </footer>
 
-        <!--js-->
+        <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./js/main.js"></script> 
+        <script src="./js/main.js"></script>
     </body>
 </html>

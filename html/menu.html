@@ -8,16 +8,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <!--navigation bar-->
-         <nav class="navbar bg-body-tertiary fixed-top">
+    <body class="d-flex flex-column min-vh-100 m-0 p-0">
+
+        <!-- navigation bar -->
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                     <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
+                <a class="navbar-brand d-inline-flex align-items-center gap-2" href="../index.html">
+                    <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
                     Nummy Eats
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -26,107 +27,153 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./branches.html">Branches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./careers.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reservations.html">Reservations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reviews.html">Reviews</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./branches.html">Branches</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reservations.html">Reservations</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <!--hero section-->
-        <main class="content-wrapper">
-            <header class="menu-header">
-                <h1>Our Menu</h1>
-                <p class="menu-subtitle">Authentic recipes prepared with love and tradition</p>
+
+        <!-- main content -->
+        <main class="flex-grow-1 pt-5 text-center content-wrapper">
+
+            <!-- menu header -->
+            <header class="menu-header pt-4 px-3 pb-2">
+                <h1 class="fw-bold">Our Menu</h1>
+                <p class="menu-subtitle fst-italic mb-4">Authentic recipes prepared with love and tradition</p>
             </header>
 
-            <div class="menu-container">
-                <div class="menu-card">
-                    <h3>Breakfast (Staftahi)</h3>
-                    <table class="menu-table">
-                        <tr><td>Chai na Mandazi <span class="ingredients">Classic spiced tea served with fresh sweet cardamon mandazi</span></td><td class="price">KES 150</td></tr>
-                        <tr><td>Chapo Beans <span class="ingredients">Two soft layered chapatis paired with savory yellow bean stew</span></td><td class="price">KES 200</td></tr>
-                        <tr><td>Mahamri & Beans <span class="ingredients">Coastal style mahamri served with rich coconut pigeon peas (Mbaazi)</span></td><td class="price">KES 200</td></tr>
-                        <tr><td>Egg, Sausage & Toast <span class="ingredients">Two fried eggs, local beef sausages, and buttered toast</span></td><td class="price">KES 350</td></tr>
+            <!-- menu cards container -->
+            <div class="menu-container d-flex flex-wrap justify-content-center gap-4 mx-auto px-3" style="max-width: 1200px;">
+
+                <!-- breakfast -->
+                <div class="menu-card w-100 rounded-3 p-4 text-start">
+                    <h3 class="fw-bold pb-2 mb-3">Breakfast (Staftahi)</h3>
+                    <table class="menu-table w-100">
+                        <tr>
+                            <td class="py-3">Chai na Mandazi <span class="ingredients d-block mt-1">Classic spiced tea served with fresh sweet cardamon mandazi</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 150</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Chapo Beans <span class="ingredients d-block mt-1">Two soft layered chapatis paired with savory yellow bean stew</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 200</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Mahamri & Beans <span class="ingredients d-block mt-1">Coastal style mahamri served with rich coconut pigeon peas (Mbaazi)</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 200</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Egg, Sausage & Toast <span class="ingredients d-block mt-1">Two fried eggs, local beef sausages, and buttered toast</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 350</td>
+                        </tr>
                     </table>
                 </div>
 
-                <div class="menu-card">
-                    <h3>Main Dishes (Chakula Kikuu)</h3>
-                    <table class="menu-table">
-                        <tr><td>Ugali na Nyama Choma <span class="ingredients">Flame-roasted tender beef served with dense white cornmeal cake</span></td><td class="price">KES 700</td></tr>
-                        <tr><td>Ugali na Kuku <span class="ingredients">Wet-fried organic village chicken cooked in onion and tomato gravy</span></td><td class="price">KES 600</td></tr>
-                        <tr><td>Ugali na Samaki (Tilapia) <span class="ingredients">Fresh deep fried or wet fried lake tilapia served with local greens</span></td><td class="price">KES 750</td></tr>
-                        <tr><td>Chicken Biryani <span class="ingredients">Fragrant basmati rice layered with heavily spiced, tender chicken marinade</span></td><td class="price">KES 650</td></tr>
-                        <tr><td>Beef Pilau <span class="ingredients">Aromatic Swahili celebration rice cooked with pure pilau masala spices and beef</span></td><td class="price">KES 550</td></tr>
-                        <tr><td>Matumbo Stew <span class="ingredients">Slow-simmered tripe tossed with sweet bell peppers, onions, and rich broth</span></td><td class="price">KES 500</td></tr>
+                <!-- main dishes -->
+                <div class="menu-card w-100 rounded-3 p-4 text-start">
+                    <h3 class="fw-bold pb-2 mb-3">Main Dishes (Chakula Kikuu)</h3>
+                    <table class="menu-table w-100">
+                        <tr>
+                            <td class="py-3">Ugali na Nyama Choma <span class="ingredients d-block mt-1">Flame-roasted tender beef served with dense white cornmeal cake</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 700</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Ugali na Kuku <span class="ingredients d-block mt-1">Wet-fried organic village chicken cooked in onion and tomato gravy</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 600</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Ugali na Samaki (Tilapia) <span class="ingredients d-block mt-1">Fresh deep fried or wet fried lake tilapia served with local greens</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 750</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Chicken Biryani <span class="ingredients d-block mt-1">Fragrant basmati rice layered with heavily spiced, tender chicken marinade</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 650</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Beef Pilau <span class="ingredients d-block mt-1">Aromatic Swahili celebration rice cooked with pure pilau masala spices and beef</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 550</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Matumbo Stew <span class="ingredients d-block mt-1">Slow-simmered tripe tossed with sweet bell peppers, onions, and rich broth</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 500</td>
+                        </tr>
                     </table>
                 </div>
 
-                <div class="menu-card">
-                    <h3>Sides & Accompaniments</h3>
-                    <table class="menu-table">
-                        <tr><td>Maridadi Bhajia <span class="ingredients">Crispy battered potato slices seasoned with fresh herbs and turmeric</span></td><td class="price">KES 200</td></tr>
-                        <tr><td>Githeri <span class="ingredients">A traditional mixture of boiled maize and red kidney beans, lightly fried</span></td><td class="price">KES 250</td></tr>
-                        <tr><td>Sukuma Wiki <span class="ingredients">Freshly shredded collard greens flash-fried with onions and tomatoes</span></td><td class="price">KES 150</td></tr>
-                        <tr><td>Kachumbari <span class="ingredients">Crisp salsa made of sliced tomatoes, red onions, chili, and fresh lime juice</span></td><td class="price">KES 100</td></tr>
-                        <tr><td>Chapati (2 pcs) <span class="ingredients">Soft, flaky, oil-layered iron pan flatbreads</span></td><td class="price">KES 100</td></tr>
+                <!-- sides -->
+                <div class="menu-card w-100 rounded-3 p-4 text-start">
+                    <h3 class="fw-bold pb-2 mb-3">Sides & Accompaniments</h3>
+                    <table class="menu-table w-100">
+                        <tr>
+                            <td class="py-3">Maridadi Bhajia <span class="ingredients d-block mt-1">Crispy battered potato slices seasoned with fresh herbs and turmeric</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 200</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Githeri <span class="ingredients d-block mt-1">A traditional mixture of boiled maize and red kidney beans, lightly fried</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 250</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Sukuma Wiki <span class="ingredients d-block mt-1">Freshly shredded collard greens flash-fried with onions and tomatoes</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 150</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kachumbari <span class="ingredients d-block mt-1">Crisp salsa made of sliced tomatoes, red onions, chili, and fresh lime juice</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 100</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Chapati (2 pcs) <span class="ingredients d-block mt-1">Soft, flaky, oil-layered iron pan flatbreads</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 100</td>
+                        </tr>
                     </table>
                 </div>
 
-                <div class="menu-card">
-                    <h3>Drinks (Vinywaji)</h3>
-                    <table class="menu-table">
-                        <tr><td>Tangawizi Tea <span class="ingredients">Hot, fiercely spiced freshly crushed ginger root milk tea</span></td><td class="price">KES 120</td></tr>
-                        <tr><td>Mursik <span class="ingredients">Traditional Kalenjin fermented milk seasoned with soot from select trees</span></td><td class="price">KES 250</td></tr>
-                        <tr><td>Fresh Mango Juice <span class="ingredients">Thick, sweet, local premium mangoes blended daily</span></td><td class="price">KES 200</td></tr>
-                        <tr><td>Soda <span class="ingredients">Chilled choice of classic soft drinks</span></td><td class="price">KES 100</td></tr>
+                <!-- drinks -->
+                <div class="menu-card w-100 rounded-3 p-4 text-start">
+                    <h3 class="fw-bold pb-2 mb-3">Drinks (Vinywaji)</h3>
+                    <table class="menu-table w-100">
+                        <tr>
+                            <td class="py-3">Tangawizi Tea <span class="ingredients d-block mt-1">Hot, fiercely spiced freshly crushed ginger root milk tea</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 120</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Mursik <span class="ingredients d-block mt-1">Traditional Kalenjin fermented milk seasoned with soot from select trees</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 250</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Fresh Mango Juice <span class="ingredients d-block mt-1">Thick, sweet, local premium mangoes blended daily</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 200</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Soda <span class="ingredients d-block mt-1">Chilled choice of classic soft drinks</span></td>
+                            <td class="price text-end ps-3 py-3 text-nowrap">KES 100</td>
+                        </tr>
                     </table>
                 </div>
+
             </div>
 
-            <p class="menu-disclaimer">All meals are prepared fresh on order. Please allow 20–30 minutes during peak hours.</p>
+            <p class="menu-disclaimer fst-italic mx-auto my-5 px-3" style="max-width: 800px;">
+                All meals are prepared fresh on order. Please allow 20–30 minutes during peak hours.
+            </p>
+
         </main>
-        
-        <!--footer-->
-         <footer>
-            <p>@nummyeats2026 from our hearts to your plates. </p>
+
+        <!-- footer -->
+        <footer class="text-center py-2 w-100 m-0">
+            <p class="mb-0">@nummyeats2026 from our hearts to your plates.</p>
         </footer>
 
-        <!--js-->
-
-
+        <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
-
-
     </body>
 </html>

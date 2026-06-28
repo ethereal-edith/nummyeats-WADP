@@ -3,395 +3,253 @@
 #D29046
 #3D6334
 */
-/*all pages*/
-html, body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
-    padding:0;
-}
+
+/* all pages*/
+
 nav.navbar {
     background: linear-gradient(90deg, #402218 0%, #D29046 55%, #3D6334 100%);
-    text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-nav.navbar .navbar-brand{
-    color: #FFFFFF !important; /* important overrides the bootstrap css*/
-    font-weight: bold;
-}
-.navbar-brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px; 
+nav.navbar .navbar-brand {
+    color: #FFFFFF !important;
 }
 .nav-logo {
-    width: 35px;         
-    height: 35px;       
-    object-fit: contain; /* Prevents squishing if your logo aspect ratio isn't perfectly square */
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
     border-radius: 50px;
 }
-.offcanvas{
+.offcanvas {
     background-color: #402218 !important;
 }
-.offcanvas .offcanvas-title{
+.offcanvas .offcanvas-title {
     color: #FFFFFF;
-
 }
-.offcanvas .nav-link{
+.offcanvas .nav-link {
     color: #D29046 !important;
     font-weight: 500;
 }
 .offcanvas .nav-link:hover {
-    color: #3D6334 !important; 
+    color: #3D6334 !important;
 }
 .offcanvas .btn-close {
     filter: invert(1) grayscale(1) brightness(2);
     opacity: 0.8;
-
 }
-.content-wrapper {
-    flex: 1 0 auto;
-    padding-top: 60px; 
-    text-align: center;
-}
-footer { 
-    background-color: #402218; 
-    color: #D29046; 
-    text-align: center;
-    padding: 10px 0;
+footer {
+    background-color: #402218;
+    color: #D29046;
     font-family: Georgia, serif;
-    width: 100%;
-    margin: 0;
 }
-/*index.html*/
+
+/* index.html */
+
 .hero-section {
-    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04)); 
-    padding: 60px 20px;
-    margin-bottom: 20px;
-    border-radius: 0 0 20px 20px; 
+    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04));
+    border-radius: 0 0 20px 20px;
 }
 .hero-section h1 {
     font-family: Georgia, serif;
-    color: #402218; 
+    color: #402218;
     font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
     letter-spacing: -0.5px;
 }
 .hero-section h2 {
     font-family: Georgia, serif;
-    color: #3D6334; 
+    color: #3D6334;
     font-size: 2.0rem;
-    font-style: italic;
-    text-transform: capitalize; 
-    margin-bottom: 8px;
 }
 .hero-section p {
     font-family: Georgia, serif;
-    color: #D29046; 
+    color: #D29046;
     font-size: 1.4rem;
-    font-style: italic;
-    text-transform: capitalize; 
-    margin-bottom: 8px;
 }
-.intro {
-    max-width: 750px; 
-    margin: 40px auto; 
-    padding: 0 25px;
-    position: relative;
-}
-
 .intro p {
     font-family: Georgia, serif;
-    color: #402218; 
+    color: #402218;
     font-size: 1.25rem;
-    line-height: 1.8; 
-    text-align: center;
-    font-style: italic;
+    line-height: 1.8;
 }
 .intro::before {
-    content: "“";
+    content: "\201C";
     font-family: Georgia, serif;
     font-size: 4rem;
-    color: rgba(210, 144, 70, 0.2); 
+    color: rgba(210, 144, 70, 0.2);
     position: absolute;
     top: -30px;
     left: 0;
 }
 .intro::after {
-    content: "”"; 
+    content: "\201D";
     font-family: Georgia, serif;
     font-size: 4rem;
-    color: rgba(210, 144, 70, 0.2); 
+    color: rgba(210, 144, 70, 0.2);
     position: absolute;
-    bottom: -30px; 
-    right: 10px;   
+    bottom: -30px;
+    right: 10px;
 }
 .choose-us {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 12px;
     border: 1px solid rgba(64, 34, 24, 0.08);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
-
 .choose-us h2 {
     font-family: Georgia, serif;
     color: #402218;
     font-size: 1.8rem;
-    margin-bottom: 25px;
-    text-align: center;
 }
-
 .choose-us ul {
-    list-style: none; /* Removes the default browser bullet points */
+    list-style: none;
     padding-left: 0;
-}
-.choose-us li::before {
-    content: "❥";
-    position: absolute;
-    left: 5px;
-    top: 0;
-    color: #3D6334; 
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 .choose-us li {
     font-family: 'Times New Roman', Times, serif;
     color: #402218;
     font-size: 1.15rem;
     line-height: 1.6;
-    margin-bottom: 18px;
     padding-left: 30px;
     position: relative;
-    text-align: left;
+}
+.choose-us li::before {
+    content: "❥";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #3D6334;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 .brand-link {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 10px;
-    background-color: #402218; 
-    color: #D29046;            
+    background-color: #402218;
+    color: #D29046;
     font-family: Georgia, serif;
-    font-weight: bold;
-    text-decoration: none;     
-    border-radius: 5px;        
-    transition: all 0.3s ease; /* Makes the hover transition smooth */
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 .brand-link:hover {
-    background-color: #3D6334; 
-    color: #FFFFFF;           
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    background-color: #3D6334;
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .best-sellers {
-    padding: 40px 20px;
     background-color: #fcf9f5;
-    text-align: center;
 }
 .best-sellers h2 {
-    color: #402218; 
+    color: #402218;
     font-family: Georgia, serif;
-    margin-bottom: 30px;
 }
-/*menu.html*/
+
+/* menu.html */
+
 .menu-items {
-    display: flex;
-    flex-direction: row; /* Aligns image and text side-by-side */
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto 30px auto; 
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.08); 
-    overflow: hidden; 
-    text-align: left; /* Aligns description text cleanly */
-    border-left: 5px solid #3D6334; 
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.08);
+    border-left: 5px solid #3D6334;
 }
 .menu-items img {
     width: 250px;
     height: 200px;
-    object-fit: cover; /* Prevents the food pictures from stretching out of shape */
+    object-fit: cover;
 }
 .menu-items p {
-    padding: 20px 25px;
-    margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.05rem;
     line-height: 1.6;
-    color: #402218; 
+    color: #402218;
 }
-
 .menu-items p strong {
-    color: #D29046; 
+    color: #D29046;
     font-family: Georgia, serif;
     font-size: 1.2rem;
-    display: block;
-    margin-bottom: 8px;
-}
-.menu-header {
-    padding: 30px 20px 10px 20px;
 }
 .menu-header h1 {
     font-family: Georgia, serif;
     color: #402218;
     font-size: 2.8rem;
-    font-weight: bold;
 }
 .menu-subtitle {
     font-family: 'Times New Roman', Times, serif;
     color: #D29046;
     font-size: 1.2rem;
-    font-style: italic;
-    margin-bottom: 30px;
-}
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 .menu-card {
     background-color: #ffffff;
-    border-radius: 12px;
     box-shadow: 0 4px 15px rgba(64, 34, 24, 0.05);
     border-top: 4px solid #3D6334;
-    padding: 25px;
-    width: 100%;
-    max-width: 540px; 
-    text-align: left;
+    max-width: 540px;
 }
 .menu-card h3 {
     font-family: Georgia, serif;
     color: #402218;
     font-size: 1.4rem;
-    font-weight: bold;
-    border-bottom: 1px dashed rgba(210, 144, 70, 0.3); /*dotted underline*/
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    border-bottom: 1px dashed rgba(210, 144, 70, 0.3);
 }
 .menu-table td {
-    padding: 12px 0;
     vertical-align: top;
     font-family: Georgia, serif;
     font-size: 1.1rem;
     color: #402218;
 }
 .menu-table td .ingredients {
-    display: block;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9rem;
     color: #70605c;
-    margin-top: 4px;
     line-height: 1.4;
 }
 .menu-table td.price {
-    text-align: right;
     font-weight: bold;
-    color: #D29046; 
+    color: #D29046;
     white-space: nowrap;
-    padding-left: 15px;
     font-size: 1.05rem;
 }
 .menu-disclaimer {
     font-family: Georgia, serif;
-    color: #3D6334; 
-    font-style: italic;
+    color: #3D6334;
     font-size: 1.1rem;
-    margin: 40px auto 50px auto;
-    max-width: 800px;
-    padding: 0 20px;
     font-weight: 500;
 }
-/*gallery.html*/
-.gallery-header {
-    padding: 40px 20px 20px 20px;
-}
+/* gallery.html*/
 .gallery-header h1 {
     font-family: Georgia, serif;
-    color: #402218; 
+    color: #402218;
     font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 5px;
 }
 .gallery-header p {
     font-family: 'Times New Roman', Times, serif;
-    color: #D29046; 
+    color: #D29046;
     font-size: 1.2rem;
-    font-style: italic;
-}
-.gallery-section {
-    max-width: 1200px;
-    margin: 40px auto 60px auto;
-    padding: 0 20px;
 }
 .gallery-section h2 {
     font-family: Georgia, serif;
     color: #402218;
     font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: 25px;
-    border-bottom: 2px solid rgba(210, 144, 70, 0.2); 
-    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.2);
 }
-/* Flex arrangements for grid alignment layout rows */
-.food-items, .restaurant {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-/* The horizontal card container shape setup */
 .gallery-card {
-    background-color: #ffffff; 
-    padding: 12px; 
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06); 
-    
-    /* Widened layout to make room for text next to images */
-    width: 100%;
-    max-width: 520px; 
-    height: 180px; 
-    
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
     border: 1px solid rgba(64, 34, 24, 0.06);
-    border-left: 5px solid #3D6334; 
-    
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    overflow: hidden; 
-    text-align: left;
-
+    border-left: 5px solid #3D6334;
+    max-width: 520px;
+    height: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .gallery-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(64, 34, 24, 0.12);
 }
-/* Image restrictions inside the horizontal landscape card layout */
 .gallery-card img {
-    width: 160px; /* Locked width for image footprint columns */
-    height: 100%; /* Spans full height of parent container card */
-    object-fit: cover; 
-    border-radius: 6px; 
-    flex-shrink: 0; /*Prevents text from crushing image dimensions */
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 .gallery-card p {
-    padding: 0 10px 0 20px;
-    margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.5;
-    color: #402218; 
+    color: #402218;
 }
 .gallery-card p strong {
     color: #D29046;
     font-family: Georgia, serif;
     font-size: 1.15rem;
-    display: block;
-    margin-bottom: 6px;
 }
