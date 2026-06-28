@@ -3,84 +3,148 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Nummy Eats</title>
+        <title>Nummy Eats | Careers</title>
         <link rel="icon" type="image/png" href="../assets/nummy eats logo.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <!--navigation bar-->
-         <nav class="navbar bg-body-tertiary fixed-top">
+    <body class="d-flex flex-column min-vh-100 m-0 p-0">
+
+        <!-- navigation bar -->
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                     <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
+                <a class="navbar-brand d-inline-flex align-items-center gap-2" href="../index.html">
+                    <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
                     Nummy Eats
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nummy eats</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nummy Eats</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./branches.html">Branches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./careers.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reservations.html">Reservations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reviews.html">Reviews</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./branches.html">Branches</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./careers.html">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reservations.html">Reservations</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <!--hero section-->
 
-        <main class="content-wrapper">
-            <section class="hero-section">
-                <h1>Karibu Nummy eats</h1>
-                <p> bold, authentic kenyan flavours </p>
+        <main class="flex-grow-1 pt-5 text-center content-wrapper">
+            <!-- hero -->
+            <section class="careers-hero py-5 px-3 mb-2">
+                <h1 class="fw-bold mb-2">Join Our Team</h1>
+                <p class="mb-0">Come cook, serve, and grow with us.</p>
             </section>
+            <!-- intro -->
+            <section class="careers-intro mx-auto px-3 mb-5 text-start" style="max-width: 820px;">
+                <p>
+                    At Nummy Eats, our people are as important as our food. We are a team that takes pride in what we do — whether that is behind the grill, on the floor, or keeping things running behind the scenes. If you love good food and good company, there is a place for you here.
+                </p>
+            </section>
+            <!-- kitchen roles -->
+            <section class="mx-auto px-3 mb-5 text-start" style="max-width: 1000px;">
+                <h2 class="section-title fw-bold mb-4">Kitchen Roles</h2>
+                <div class="d-flex flex-wrap justify-content-start gap-4">
+
+                    <div class="job-card p-4" style="width: 100%; max-width: 460px;">
+                        <div class="d-flex gap-2 mb-3">
+                            <span class="branch-badge">Westlands</span>
+                            <span class="type-badge">Full-time</span>
+                        </div>
+                        <h5 class="mb-2">Line Cook</h5>
+                        <p>We need a cook who knows their way around Kenyan classics: ugali, stews, pilau, nyama choma. 
+                            A Minimum 2 years' kitchen experience required. 
+                            You'll work closely with Chef Patrick and be expected to maintain our standard on every plate, every shift.
+                        </p>
+                    </div>
+                    <div class="job-card p-4" style="width: 100%; max-width: 460px;">
+                        <div class="d-flex gap-2 mb-3">
+                            <span class="branch-badge">CBD</span>
+                            <span class="type-badge">Full-time</span>
+                        </div>
+                        <h5 class="mb-2">Kitchen Assistant</h5>
+                        <p>Support our kitchen team with prep work, stock rotation, and keeping the kitchen clean and organised throughout service. 
+                            No formal experience required — we will train the right person. 
+                            A willingness to learn and a strong work ethic matter most.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- front of house roles -->
+            <section class="mx-auto px-3 mb-5 text-start" style="max-width: 1000px;">
+                <h2 class="section-title fw-bold mb-4">Front of House</h2>
+                <div class="d-flex flex-wrap justify-content-start gap-4">
+
+                    <div class="job-card p-4" style="width: 100%; max-width: 460px;">
+                        <div class="d-flex gap-2 mb-3">
+                            <span class="branch-badge">All Branches</span>
+                            <span class="type-badge">Full-time / Part-time</span>
+                        </div>
+                        <h5 class="mb-2">Waitstaff</h5>
+                        <p>Friendly, reliable, and comfortable working busy weekend shifts. 
+                            No experience necessary. We train everyone from the ground up.
+                            What we need is someone who genuinely enjoys people and takes pride in making every customer feel looked after.
+                        </p>
+                    </div>
+                    <div class="job-card p-4" style="width: 100%; max-width: 460px;">
+                        <div class="d-flex gap-2 mb-3">
+                            <span class="branch-badge">Westlands</span>
+                            <span class="type-badge">Part-time</span>
+                        </div>
+                        <h5 class="mb-2">Cashier</h5>
+                        <p>Handle payments, manage the till accurately, and be the last friendly face our customers see before they leave. 
+                            Basic numeracy and comfort with mobile money (M-Pesa, card payments) is all we need. We will handle the rest.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- perks of working here -->
+            <section class="mx-auto px-3 mb-5 text-start" style="max-width: 820px;">
+                <h2 class="section-title fw-bold mb-4">Why Work at Nummy Eats?</h2>
+                <ul class="perks-list">
+                    <li>Meals provided during every shift. Yes, from the real menu, not just the leftovers</li>
+                    <li>Flexible scheduling that works around school and other commitments</li>
+                    <li>A team culture that feels like family. We celebrate birthdays, wins, and milestones together</li>
+                    <li>Clear growth paths: many of our supervisors started as waitstaff</li>
+                    <li>Training provided for all roles, including those with no prior experience</li>
+                    <li>Staff discounts across all three branches</li>
+                </ul>
+            </section>
+
+            <!-- how to apply banner -->
+            <section class="mx-auto px-3 mb-5" style="max-width: 820px;">
+                <div class="apply-banner px-5 py-4 text-center">
+                    <p class="mb-1"><strong style="color:#D29046; font-family:Georgia,serif;">How to Apply</strong></p>
+                    <p class="mb-0">
+                        Send your CV and the role you are applying for to <a href="mailto:careers@nummyeats.co.ke">careers@nummyeats.co.ke</a>.<br>
+                        For waitstaff and kitchen assistant roles, you are also welcome to apply in person at any branch.<br>
+                        We review applications on a rolling basis and will reach out within 7 days.
+                    </p>
+                </div>
+            </section>
+
         </main>
-        
-        <!--footer-->
-         <footer>
-            <p>Made with love by: Edith Agai </p>
+
+        <!-- footer -->
+        <footer class="text-center py-2 w-100 m-0">
+            <p class="mb-0">@nummyeats2026 from our hearts to your plates.</p>
         </footer>
-
-        <!--js-->
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
-
-
     </body>
 </html>

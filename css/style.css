@@ -403,3 +403,101 @@ footer {
     font-weight: bold;
     font-family: Georgia, serif;
 }
+
+/* careers page*/
+.careers-hero h1 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 3rem;
+}
+.careers-hero p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #D29046;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.careers-intro p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #402218;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.section-title {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.35);
+    padding-bottom: 8px;
+}
+.job-card {
+    background-color: #ffffff;
+    border-left: 5px solid #3D6334;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.job-card h5 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.job-card p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #70605c;
+    font-size: 0.97rem;
+    line-height: 1.65;
+    margin: 0;
+}
+.branch-badge {
+    color: #D29046;
+    font-family: Georgia, serif;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+.type-badge {
+    color: #3D6334;
+    font-family: Georgia, serif;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+.apply-banner {
+    background-color: #402218;
+    border-radius: 12px;
+}
+.apply-banner p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.apply-banner a {
+    color: #D29046;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apply-banner a:hover {
+    color: #ffffff;
+}
+.perks-list {
+    list-style: none;
+    padding-left: 0;
+}
+.perks-list li {
+    font-family: 'Times New Roman', Times, serif;
+    color: #402218;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 14px;
+}
+.perks-list li::before {
+    content: "❥";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #3D6334;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
