@@ -7,7 +7,7 @@
 /* all pages*/
 nav.navbar {
     background: linear-gradient(90deg, #402218 0%, #D29046 55%, #3D6334 100%);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, Georgia , serif;
 }
 nav.navbar .navbar-brand {
     color: #FFFFFF !important;
@@ -100,7 +100,7 @@ footer {
     padding-left: 0;
 }
 .choose-us li {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #402218;
     font-size: 1.15rem;
     line-height: 1.6;
@@ -147,7 +147,7 @@ footer {
     object-fit: cover;
 }
 .menu-items p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     font-size: 1.05rem;
     line-height: 1.6;
     color: #402218;
@@ -163,7 +163,7 @@ footer {
     font-size: 2.8rem;
 }
 .menu-subtitle {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #D29046;
     font-size: 1.2rem;
 }
@@ -186,7 +186,7 @@ footer {
     color: #402218;
 }
 .menu-table td .ingredients {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     font-size: 0.9rem;
     color: #70605c;
     line-height: 1.4;
@@ -211,7 +211,7 @@ footer {
     font-size: 3rem;
 }
 .gallery-header p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #D29046;
     font-size: 1.2rem;
 }
@@ -241,7 +241,7 @@ footer {
     flex-shrink: 0;
 }
 .gallery-card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #402218;
@@ -277,7 +277,7 @@ footer {
     padding-bottom: 8px;
 }
 .story-text {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #402218;
     font-size: 1.1rem;
     line-height: 1.85;
@@ -295,7 +295,7 @@ footer {
     font-weight: bold;
 }
 .value-card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #70605c;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -333,7 +333,7 @@ footer {
     font-style: italic;
 }
 .team-card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #70605c;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -361,7 +361,7 @@ footer {
     font-size: 1rem;
 }
 .milestone-item p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #402218;
     font-size: 1rem;
     line-height: 1.6;
@@ -374,7 +374,7 @@ footer {
     font-size: 3rem;
 }
 .branches-hero p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #D29046;
     font-size: 1.2rem;
     font-style: italic;
@@ -392,7 +392,7 @@ footer {
     font-size: 1.4rem;
 }
 .branch-card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #402218;
     font-size: 1rem;
     line-height: 1.7;
@@ -411,13 +411,13 @@ footer {
     font-size: 3rem;
 }
 .careers-hero p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #D29046;
     font-size: 1.2rem;
     font-style: italic;
 }
 .careers-intro p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #402218;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -443,7 +443,7 @@ footer {
     font-weight: bold;
 }
 .job-card p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #70605c;
     font-size: 0.97rem;
     line-height: 1.65;
@@ -466,7 +466,7 @@ footer {
     border-radius: 12px;
 }
 .apply-banner p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #ffffff;
     font-size: 1.05rem;
     line-height: 1.7;
@@ -484,7 +484,7 @@ footer {
     padding-left: 0;
 }
 .perks-list li {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia , serif;
     color: #402218;
     font-size: 1.05rem;
     line-height: 1.6;
@@ -500,4 +500,62 @@ footer {
     color: #3D6334;
     font-weight: bold;
     font-size: 1.1rem;
+}
+/* FAQ Page*/
+.faq-hero h1 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 3rem;
+}
+.faq-hero p {
+    font-family: Georgia , serif;
+    color: #D29046;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.faq-section-title {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.6rem;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.35);
+    padding-bottom: 8px;
+}
+/* accordion overrides to match brand */
+.accordion-item {
+    border: 1px solid rgba(64, 34, 24, 0.1);
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.accordion-button {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    color: #402218;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    color: #3D6334;
+    background-color: rgba(61, 99, 52, 0.05);
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(210, 144, 70, 0.3);
+}
+.accordion-button::after {
+    filter: none;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: none;
+}
+.accordion-body {
+    font-family: Georgia , serif;
+    font-size: 1rem;
+    color: #402218;
+    line-height: 1.75;
+    background-color: #fdfaf6;
+}
+.accordion-body strong {
+    color: #3D6334;
 }

@@ -3,83 +3,291 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Nummy Eats</title>
+        <title>Nummy Eats</title>
         <link rel="icon" type="image/png" href="../assets/nummy eats logo.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
     </head>
-    <body>
-       <!--navigation bar-->
-          <nav class="navbar bg-body-tertiary fixed-top">
+    <body class="d-flex flex-column min-vh-100 m-0 p-0">
+
+        <!-- navigation bar -->
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                     <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
+                <a class="navbar-brand d-inline-flex align-items-center gap-2" href="../index.html">
+                    <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
                     Nummy Eats
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About us Page</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nummy Eats</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./branches.html">Branches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./careers.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reservations.html">Reservations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reviews.html">Reviews</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./branches.html">Branches</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reservations.html">Reservations</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <!--hero section-->
 
-        <main class="content-wrapper">
-            <section class="hero-section">
-                <h1>Karibu Nummy eats</h1>
-                <p> bold, authentic kenyan flavours </p>
+        <main class="flex-grow-1 pt-5 text-center content-wrapper">
+            <!-- hero -->
+            <section class="faq-hero py-5 px-3 mb-2">
+                <h1 class="fw-bold mb-2">Frequently Asked Questions</h1>
+                <p class="mb-0">Everything you need to know before you visit.</p>
             </section>
+            <div class="mx-auto px-3 mb-5 text-start" style="max-width: 820px;">
+                <!-- visiting us -->
+                <section class="mb-5">
+                    <h2 class="faq-section-title fw-bold mb-4">Visiting Us</h2>
+                    <div class="accordion" id="visitAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#v1">
+                                    Do you take walk-ins or only reservations?
+                                </button>
+                            </h2>
+                            <div id="v1" class="accordion-collapse collapse" data-bs-parent="#visitAccordion">
+                                <div class="accordion-body">
+                                    Both! Walk-ins are always welcome. 
+                                    That said, we recommend making a reservation if you are coming as a group of 5 or more, especially on weekends, since tables fill up fast. 
+                                    You can reserve online on our <a href="./reservations.html" style="color:#3D6334;">Reservations page</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#v2">
+                                    How far in advance should I make a reservation?
+                                </button>
+                            </h2>
+                            <div id="v2" class="accordion-collapse collapse" data-bs-parent="#visitAccordion">
+                                <div class="accordion-body">
+                                    For regular table bookings, 24 hours is usually enough. 
+                                    For large groups (10+) or special occasions, we recommend booking at least 3 days ahead so we can make sure everything is ready for you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#v3">
+                                    What are your busiest hours?
+                                </button>
+                            </h2>
+                            <div id="v3" class="accordion-collapse collapse" data-bs-parent="#visitAccordion">
+                                <div class="accordion-body">
+                                    Lunch (12:00 PM – 2:00 PM) and dinner (6:30 PM – 9:00 PM) on Fridays and Saturdays are our busiest times. 
+                                    If you prefer a quieter experience, weekday mornings and early afternoons are your best bet. 
+                                    Walk-in wait times during peak hours can be 15–30 minutes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#v4">
+                                    Is there parking?
+                                </button>
+                            </h2>
+                            <div id="v4" class="accordion-collapse collapse" data-bs-parent="#visitAccordion">
+                                <div class="accordion-body">
+                                    <strong>Westlands</strong> (ABC Place) and <strong>Kilimani</strong> (James Gichuru Road) both have parking available on site. 
+                                    The <strong>CBD</strong> branch on Kimathi Street is street parking only so we recommend using a nearby parking silo if you are driving in.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#v5">
+                                    Do you have WiFi?
+                                </button>
+                            </h2>
+                            <div id="v5" class="accordion-collapse collapse" data-bs-parent="#visitAccordion">
+                                <div class="accordion-body">
+                                    Yes, all three branches have free WiFi for dine-in customers.
+                                     Ask your waiter for the password when you sit down.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- food & menu -->
+                <section class="mb-5">
+                    <h2 class="faq-section-title fw-bold mb-4">Food & Menu</h2>
+                    <div class="accordion" id="foodAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                                    Do you have vegetarian options?
+                                </button>
+                            </h2>
+                            <div id="f1" class="accordion-collapse collapse" data-bs-parent="#foodAccordion">
+                                <div class="accordion-body">
+                                    Yes. Githeri, sukuma wiki, kachumbari, chapati, bhajia, and chai na mandazi are all vegetarian. 
+                                    We are also happy to prepare certain dishes without meat on request, 
+                                    just let your waiter know when you order.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                                    Can I modify a dish or flag a food allergy?
+                                </button>
+                            </h2>
+                            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#foodAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. Please let your waiter know before ordering and they will check with the kitchen.
+                                     We take allergies seriously and will do our best to accommodate you.
+                                      For severe allergies, we recommend calling ahead so we can prepare safely.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">
+                                    Is your meat halal?
+                                </button>
+                            </h2>
+                            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#foodAccordion">
+                                <div class="accordion-body">
+                                    Yes. All meat served at Nummy Eats is halal-certified. 
+                                    We do not serve pork on any of our menus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">
+                                    Do you have a kids menu?
+                                </button>
+                            </h2>
+                            <div id="f4" class="accordion-collapse collapse" data-bs-parent="#foodAccordion">
+                                <div class="accordion-body">
+                                    We do not have a separate kids menu, but many of our dishes are naturally child-friendly; chapati, ugali, mandazi, and bhajia are popular with younger guests. 
+                                    Smaller portions can be arranged on request, just ask your waiter.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5">
+                                    How long does food take?
+                                </button>
+                            </h2>
+                            <div id="f5" class="accordion-collapse collapse" data-bs-parent="#foodAccordion">
+                                <div class="accordion-body">
+                                    Because everything is cooked fresh to order, we ask for 20–30 minutes during regular hours. D
+                                    uring peak times (Friday and Saturday evenings especially) it may take a little longer. 
+                                    Your waiter will always let you know upfront.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- payments & delivery -->
+                <section class="mb-5">
+                    <h2 class="faq-section-title fw-bold mb-4">Payments & Delivery</h2>
+                    <div class="accordion" id="payAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p1">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="p1" class="accordion-collapse collapse" data-bs-parent="#payAccordion">
+                                <div class="accordion-body">
+                                    We accept cash (KES), M-Pesa, and all major debit and credit cards. 
+                                    M-Pesa till numbers are displayed at each branch counter and on your bill.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p2">
+                                    Do you deliver?
+                                </button>
+                            </h2>
+                            <div id="p2" class="accordion-collapse collapse" data-bs-parent="#payAccordion">
+                                <div class="accordion-body">
+                                    Yes! 
+                                    we are available on <strong>Glovo</strong> and <strong>Uber Eats</strong> across all branches within their coverage areas. 
+                                    Search "Nummy Eats" on either app. Delivery times vary depending on your location and the platform's availability.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- events & special occasions -->
+                <section class="mb-5">
+                    <h2 class="faq-section-title fw-bold mb-4">Events & Special Occasions</h2>
+                    <div class="accordion" id="eventAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#e1">
+                                    Do you cater for events?
+                                </button>
+                            </h2>
+                            <div id="e1" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+                                <div class="accordion-body">
+                                    Yes! All three branches offer event catering for birthdays, corporate lunches, weddings, and other gatherings.
+                                     Please contact us at least <strong>3 days in advance</strong> for smaller events, and at least a week ahead for large-scale catering. Reach us at <a href="./contact.html" style="color:#3D6334;">
+                                    our contact page</a> or email <a href="mailto:events@nummyeats.co.ke" style="color:#3D6334;">events@nummyeats.co.ke</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#e2">
+                                    Can I host a private event or hire out the space?
+                                </button>
+                            </h2>
+                            <div id="e2" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+                                <div class="accordion-body">
+                                    Yes. Our Westlands and Kilimani branches have private dining areas available for hire. 
+                                    Whether it is a family celebration, a team lunch, or a milestone birthday, we can set the space up for you. 
+                                    Get in touch with us to discuss availability and pricing.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#e3">
+                                    Can I bring my own cake for a celebration?
+                                </button>
+                            </h2>
+                            <div id="e3" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+                                <div class="accordion-body">
+                                    Of course, We love a celebration! You are welcome to bring your own cake. Just let us know when you make your reservation so we can have plates and a cake knife ready for you.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
         </main>
-        
-        <!--footer-->
-         <footer>
-            <p>Made with love by: Edith Agai </p>
+        <!-- footer -->
+        <footer class="text-center py-2 w-100 m-0">
+            <p class="mb-0">@nummyeats2026 from our hearts to your plates.</p>
         </footer>
-
-        <!--js-->
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
-
     </body>
 </html>
