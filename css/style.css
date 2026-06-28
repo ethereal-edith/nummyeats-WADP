@@ -3,6 +3,18 @@
 #D29046
 #3D6334
 */
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+.content-wrapper {
+    flex: 1;
+    padding-top: 70px; 
+    text-align: center;
+}
 nav.navbar {
     background: linear-gradient(90deg, #402218 0%, #D29046 55%, #3D6334 100%);
     text-align: left;
@@ -25,4 +37,18 @@ nav.navbar .navbar-brand{
 }
 .offcanvas .nav-link:hover {
     color: #3D6334 !important; 
+}
+.content-wrapper {
+    flex: 1 0 auto;
+    padding-top: 60px; 
+    text-align: center;
+}
+footer { 
+    background-color: #402218; 
+    color: #D29046; 
+    text-align: center;
+    padding: 10px 0;
+    font-family: Georgia, serif;
+    width: 100%;
+    margin: 0;
 }
