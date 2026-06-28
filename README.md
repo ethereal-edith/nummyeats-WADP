@@ -77,7 +77,7 @@ nummyeats-WADP/
 
 ## 🚀 Running Locally
 
-No installations, since it is a static sie
+No installations, since it is a static site
 
 ```bash
 git clone https://github.com/ethereal-edith/nummyeats-WADP.git
