@@ -203,6 +203,32 @@ footer {
     font-size: 1.1rem;
     font-weight: 500;
 }
+.menu-search-wrapper {
+    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04));
+    padding: 20px 20px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#menuSearch {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #402218;
+    border: 2px solid rgba(210, 144, 70, 0.4);
+    border-radius: 10px;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+#menuSearch:focus {
+    border-color: #3D6334;
+    box-shadow: 0 0 0 0.2rem rgba(61, 99, 52, 0.15);
+}
+#menuSearch::placeholder {
+    color: #b09a8a;
+    font-style: italic;
+}
 
 /* gallery page*/
 .gallery-header h1 {
