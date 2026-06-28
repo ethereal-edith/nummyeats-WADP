@@ -609,3 +609,97 @@ footer {
     background-color: #2e4c27;
     color: #ffffff;
 }
+/* reviews page */
+.reviews-hero {
+    background: linear-gradient(rgba(64, 34, 24, 0.04), rgba(210, 144, 70, 0.04));
+    border-radius: 0 0 20px 20px;
+}
+.reviews-hero h1 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 3rem;
+}
+.reviews-hero p {
+    font-family: Georgia, serif;
+    color: #D29046;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.reviews-list-title {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.35);
+    padding-bottom: 8px;
+}
+.review-card {
+    background-color: #ffffff;
+    border-left: 5px solid #3D6334;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review-stars {
+    color: #D29046;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.review-text {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-style: italic;
+    flex-grow: 1;
+}
+.review-author {
+    font-family: Georgia, serif;
+    color: #70605c;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.leave-review {
+    background-color: #ffffff;
+    border-top: 4px solid #3D6334;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
+}
+.leave-review h2 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.6rem;
+    border-bottom: 2px solid rgba(210, 144, 70, 0.35);
+    padding-bottom: 8px;
+}
+.leave-review .form-label {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-weight: 600;
+}
+.leave-review .form-control,
+.leave-review .form-select {
+    font-family: Georgia, serif;
+    border: 1px solid rgba(64, 34, 24, 0.18);
+    border-radius: 8px;
+}
+.leave-review .form-control:focus,
+.leave-review .form-select:focus {
+    border-color: #3D6334;
+    box-shadow: 0 0 0 0.2rem rgba(61, 99, 52, 0.15);
+}
+.btn-review {
+    background-color: #3D6334;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    transition: background-color 0.2s ease;
+}
+.btn-review:hover {
+    background-color: #2e4c27;
+    color: #ffffff;
+}

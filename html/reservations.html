@@ -10,7 +10,7 @@
     </head>
     <body>
         <!--navigation bar-->
-         <nav class="navbar bg-body-tertiary fixed-top">
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                      <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
@@ -22,16 +22,12 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About us Page</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./branches.html">Branches</a>
                             </li>
@@ -51,10 +47,10 @@
                                 <a class="nav-link" href="./menu.html">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./reservations.html">Reservations</a>
+                                <a class="nav-link" href="./reservations.html">Reservations</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./reviews.html">Reviews</a>
+                                <a class="nav-link active" href="./reviews.html">Reviews</a>
                             </li>
                         </ul>
                     </div>
@@ -62,22 +58,103 @@
             </div>
         </nav>
         <!--hero section-->
-
         <main class="content-wrapper">
             <section class="hero-section">
                 <h1>Karibu Nummy eats</h1>
                 <p> bold, authentic kenyan flavours </p>
             </section>
         </main>
-        
+
+        <!--reviews section-->
+        <section class="reviews-section">
+            <h2>What our customers are saying</h2>
+            <div class="container">
+                <div class="row" id="reviewsList">
+                    <!--existing reviews, hardcoded for now-->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card review-card h-100">
+                            <div class="card-body">
+                                <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                                <p class="review-text">"Best nyama choma in Nairobi, hands down."</p>
+                                <p class="review-author">— James M.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card review-card h-100">
+                            <div class="card-body">
+                                <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                                <p class="review-text">"The pilau reminds me of my grandmother's cooking."</p>
+                                <p class="review-author">— Amina H.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card review-card h-100">
+                            <div class="card-body">
+                                <p class="review-stars">⭐⭐⭐⭐</p>
+                                <p class="review-text">"Great food, gets busy on weekends so book ahead."</p>
+                                <p class="review-author">— David K.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card review-card h-100">
+                            <div class="card-body">
+                                <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                                <p class="review-text">"Took my whole family for a birthday lunch, everyone loved it."</p>
+                                <p class="review-author">— Grace W.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--js: any reviews pulled from localStorage get appended into #reviewsList here, same card markup as above-->
+                </div>
+            </div>
+        </section>
+
+        <!--leave a review form-->
+        <section class="add-review-section">
+            <h2>Leave a Review</h2>
+            <form id="reviewForm" class="container">
+                <div class="mb-3">
+                    <label for="reviewerName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="reviewerName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reviewerRating" class="form-label">Rating</label>
+                    <select class="form-select" id="reviewerRating" required>
+                        <option value="">Choose a rating</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="1">⭐</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="reviewerComment" class="form-label">Your Review</label>
+                    <textarea class="form-control" id="reviewerComment" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+            </form>
+        </section>
+        <!--
+            js todo (reviewForm):
+            - listen for submit, e.preventDefault()
+            - read reviewerName, reviewerRating, reviewerComment values
+            - build a review object {name, rating, comment}
+            - get existing array from localStorage (JSON.parse, default [])
+            - push new review, JSON.stringify back into localStorage
+            - build the same card markup as above and append it into #reviewsList
+            - reset the form
+            - on page load: read localStorage and append any saved reviews into #reviewsList
+        -->
+
         <!--footer-->
          <footer>
             <p>Made with love by: Edith Agai </p>
         </footer>
-
         <!--js-->
-
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
     </body>
