@@ -1,5 +1,28 @@
 /* brand colors
-#333232
-#F7B2AD
-#CEB7B3
+#402218
+#D29046
+#3D6334
 */
+nav.navbar {
+    background: linear-gradient(90deg, #402218 0%, #D29046 55%, #3D6334 100%);
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav.navbar .navbar-brand{
+    color: #FFFFFF !important; /* important overrides the bootstrap css*/
+    font-weight: bold;
+}
+.offcanvas{
+    background-color: #402218 !important;
+}
+.offcanvas .offcanvas-title{
+    color: #FFFFFF;
+
+}
+.offcanvas .nav-link{
+    color: #D29046 !important;
+    font-weight: 500;
+}
+.offcanvas .nav-link:hover {
+    color: #3D6334 !important; 
+}
