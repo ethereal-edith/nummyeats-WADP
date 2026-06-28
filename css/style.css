@@ -20,6 +20,17 @@ nav.navbar .navbar-brand{
     color: #FFFFFF !important; /* important overrides the bootstrap css*/
     font-weight: bold;
 }
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; 
+}
+.nav-logo {
+    width: 35px;         
+    height: 35px;       
+    object-fit: contain; /* Prevents squishing if your logo aspect ratio isn't perfectly square */
+    border-radius: 50px;
+}
 .offcanvas{
     background-color: #402218 !important;
 }
