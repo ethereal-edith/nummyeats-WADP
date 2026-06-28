@@ -3,84 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Nummy Eats</title>
+        <title>Nummy Eats | Our Branches</title>
         <link rel="icon" type="image/png" href="../assets/nummy eats logo.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <!--navigation bar-->
+    <body class="d-flex flex-column min-vh-100 m-0 p-0">
+
+        <!-- navigation bar -->
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                     <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
+                <a class="navbar-brand d-inline-flex align-items-center gap-2" href="../index.html">
+                    <img src="../assets/nummy eats logo.png" alt="Nummy Eats Logo" class="nav-logo">
                     Nummy Eats
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> Our Branches</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Our Branches</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./branches.html">Branches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./careers.html">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./menu.html">Menu</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reservations.html">Reservations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./reviews.html">Reviews</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./branches.html">Branches</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./careers.html">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reservations.html">Reservations</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <!--hero section-->
 
-        <main class="content-wrapper">
-            <section class="hero-section">
-                <h1>Karibu Nummy eats</h1>
-                <p> bold, authentic kenyan flavours </p>
+        <main class="flex-grow-1 pt-5 text-center content-wrapper">
+
+            <!-- hero -->
+            <section class="branches-hero py-5 px-3 mb-2">
+                <h1 class="fw-bold mb-2">Our Branches</h1>
+                <p class="mb-0">Three locations across Nairobi with same food, same taste and same warmthevery time.</p>
+            </section>
+
+            <!-- branch cards -->
+            <section class="d-flex flex-wrap justify-content-center gap-4 mx-auto px-3 mb-5" style="max-width: 1100px;">
+                <!-- Westlands -->
+                <div class="branch-card p-4 text-start" style="width: 100%; max-width: 320px;">
+                    <h3 class="fw-bold mb-1">Westlands</h3>
+                    <span class="label">Open: Mon – Sun </span><br>
+                    <span class="label">From: 7:00 AM – 10:00 PM</span>
+                    <p><span class="label">Address: </span>ABC Place, Waiyaki Way, Westlands, Nairobi</p><br>
+                    <p><span class="label">Phone: </span>0700 123 456</p>
+                </div>
+                <!-- CBD -->
+                <div class="branch-card p-4 text-start" style="width: 100%; max-width: 320px;">
+                    <h3 class="fw-bold mb-1">CBD</h3>
+                    <span class="label"> Open: Mon – Sat</span><br>
+                    <span class="label"> From: 7:00 AM – 9:00 PM</span>
+                    <p><span class="label"> Address: </span>Kimathi Street, Nairobi CBD</p><br>
+                    <p><span class="label"> Phone: </span>0700 654 321</p>
+                </div>
+                <!-- Kilimani -->
+                <div class="branch-card p-4 text-start" style="width: 100%; max-width: 320px;">
+                    <h3 class="fw-bold mb-1">Kilimani</h3>
+                    <span class="label"> Mon – Sun </span><br>
+                    <span class="label"> 8:00 AM – 10:00 PM</span>
+                    <p><span class="label"> Address: </span>Kilimani, James Gichuru Road, Nairobi</p><br>
+                    <p><span class="label"> Phone: </span>0700 987 654</p>
+                </div>
             </section>
         </main>
-        
-        <!--footer-->
-         <footer>
-            <p>Made with love by: Edith Agai </p>
+
+        <!-- footer -->
+        <footer class="text-center py-2 w-100 m-0">
+            <p class="mb-0">@nummyeats2026 from our hearts to your plates.</p>
         </footer>
-
-        <!--js-->
-
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="../js/main.js"></script>
-
-
     </body>
 </html>

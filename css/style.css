@@ -367,3 +367,39 @@ footer {
     line-height: 1.6;
     margin: 0;
 }
+/*branches page*/
+.branches-hero h1 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 3rem;
+}
+.branches-hero p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #D29046;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.branch-card {
+    background-color: #ffffff;
+    border-top: 4px solid #3D6334;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 34, 24, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.branch-card h3 {
+    font-family: Georgia, serif;
+    color: #402218;
+    font-size: 1.4rem;
+}
+.branch-card p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #402218;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+.branch-card .label {
+    color: #D29046;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
