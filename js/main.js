@@ -38,6 +38,50 @@ if (reservationForm){ //prevents errors
     });
 }
 // reviews storage
+// writes the review
+function appendReview(name, rating, comment) {
+    const col = document.createElement('div');
+    col.className = 'col-md-6 col-lg-3 mb-4';
+    col.innerHTML = `
+        <div class="card review-card h-100 rounded-3">
+            <div class="card-body">
+                <p class="review-stars">${'⭐'.repeat(rating)}</p>
+                <p class="review-text">"${comment}"</p>
+                <p class="review-author">— ${name}</p>
+            </div>
+        </div>
+    `;
+    document.getElementById('reviewsList').appendChild(col);
+}
+
+const reviewForm = document.getElementById('reviewForm');
+if (reviewForm) {
+    // load saved reviews on page load
+    const saved = JSON.parse(localStorage.getItem('nummyReviews') || '[]');
+    saved.forEach(function(r) {
+        appendReview(r.name, r.rating, r.comment);
+    });
+
+    reviewForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('reviewerName').value.trim();
+        const rating = document.getElementById('reviewerRating').value.trim();
+        const comment = document.getElementById('reviewerComment').value.trim();
+
+        const review = { name, rating, comment };
+
+        //get existing reviews and current reviews
+        const existing = JSON.parse(localStorage.getItem('nummyReviews') || '[]');
+        existing.push(review);
+        localStorage.setItem('nummyReviews', JSON.stringify(existing));
+
+        appendReview(name, rating, comment);
+
+        reviewForm.reset();
+    });
+}
+
 
 // menu search
 const menuSearch = document.getElementById('menuSearch');
@@ -47,7 +91,7 @@ if(menuSearch){//prevents error
         const rows = document.querySelectorAll('.menu-table tr');
         rows.forEach(function(row){
             const text = row.textContent.toLowerCase();
-            row.style.display = text.includes(term) ? '' : 'none';
+            row.style.display = text.includes(term) ? '' : 'none';//tenary func (shortened if func)
         });
     });
 }
